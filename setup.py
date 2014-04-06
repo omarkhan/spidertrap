@@ -5,7 +5,7 @@ with open('README.rst') as readme:
 
 setup(
     name='spidertrap',
-    version='0.1',
+    version='0.1.1',
     description='Spider trap for testing crawlers',
     long_description=long_description,
     author='Omar Khan',
