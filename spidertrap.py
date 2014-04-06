@@ -25,6 +25,7 @@ class Handler(BaseHTTPRequestHandler):
                  for i in range(1, self.server.fanout + 1)]
         response = response_template.format(links='\n'.join(links))
         self.send_response(200)
+        self.send_header('Content-Type', 'text/html')
         self.end_headers()
         self.wfile.write(response.encode('ascii'))
 
